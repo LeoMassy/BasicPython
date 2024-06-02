@@ -2,7 +2,7 @@ from math import sin
 # --example--
 # print(sin(0))
 # >>> 0
-# -----------
+
 from math import pi
 a = 0
 b = pi / 2

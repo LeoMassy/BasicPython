@@ -1,7 +1,4 @@
-a = input("a の値を入力: ")
-b = input("b の値を入力: ")
 
-# TODO
 a = 10
 b = 20
 r = a % b
