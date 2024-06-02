@@ -1,35 +1,16 @@
-a = 10
-b = 20
-r = a % b
-while(r != 0):
-    a = b
-    b = r
-    r = a % b
-else:
-    print('最大公約数は{}'.format(b))
+def euclid(a,b):
+    if a < b:
+        a, b = b, a
+    while b != 0:
+        a, b = b, a % b
+    return a
+def mutually_prime(a,b):
+    gcd = euclid(a,b)
+    if gcd ==1:
+        return True
+    else:
+        return False
 
+print("最大公約数:", euclid(a, b))
 
-
-a = 14
-b = 91
-r = a % b
-while(r != 0):
-    a = b
-    b = r
-    r = a % b
-else:
-    print('最大公約数は{}'.format(b))
-
-
-
-
-
-a = 91
-b = 14
-r = a % b
-while(r != 0):
-    a = b
-    b = r
-    r = a % b
-else:
-    print('最大公約数は{}'.format(b))
+print("互いに素であるか:", mutually_prime(a, b))

@@ -1,25 +1,38 @@
-a = 61
-if a <= 1:
-    print(False)
-else:
-    for i in range(2, int(a**0.5)+1):
-        if a % i == 0:
-            print(False)
-            break
-    else:
-        print(True)
-    
+def prime_number(a):
+    if not isinstance(a, (int, float)):
+        print("数値を入力してください")
+        return False
 
-     
-b = 10
-if b <= 1:
-    print(False)
-else:
-    for i in range(2, int(b**0.5)+1):
-        if b % i == 0:
-            print(False)
-            break
+    if a <= 0:
+        print("正の値で入力してください")
+        return False
+
+    n = int(a)
+    if a - n != 0:
+        print("整数の値を入力してください")
+        return False
+
+    if n < 2:
+        print("自然数（2 以上）を入力してください")
+        return False
+
+    for i in range(1, n + 1):
+        if n % i == 0:
+            return False
+
+    return True
+
+    if count == 2:
+        print("素数です")
+        return True
     else:
-        print(True)
+        print("素数じゃないです")
+        return False
+
+try:
+    n = float(input("自然数を入力してください: "))
+    prime_number(n)
+except ValueError:
+    print("数値を入力してください")
     
     
