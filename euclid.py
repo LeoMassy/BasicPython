@@ -11,6 +11,7 @@ def mutually_prime(a,b):
     else:
         return False
 
+
 print("最大公約数:", euclid(a, b))
 
 print("互いに素であるか:", mutually_prime(a, b))

@@ -6,7 +6,6 @@ b_str = input("range_max")
 b = eval(b_str)
 n = int(input("n"))
 
-
 def trapezoidal_integral(f,a,b,n):
     h = (b - a) / n
     s = 0

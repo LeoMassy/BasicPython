@@ -7,6 +7,7 @@ def prime_number(a):
         print("正の値で入力してください")
         return False
 
+   
     n = int(a)
     if a - n != 0:
         print("整数の値を入力してください")
