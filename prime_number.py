@@ -9,9 +9,8 @@ else:
     else:
         print(True)
     
-    
-    b = 10
-
+     
+b = 10
 if b <= 1:
     print(False)
 else:

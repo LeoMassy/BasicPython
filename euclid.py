@@ -1,4 +1,3 @@
-
 a = 10
 b = 20
 r = a % b
@@ -9,8 +8,6 @@ while(r != 0):
 else:
     print('最大公約数は{}'.format(b))
 
-
-# In[2]:
 
 
 a = 14
@@ -24,7 +21,7 @@ else:
     print('最大公約数は{}'.format(b))
 
 
-# In[3]:
+
 
 
 a = 91
