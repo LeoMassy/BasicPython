@@ -7,8 +7,7 @@ else:
             print(False)
             break
     else:
-        print(True)
-    
+        print(True) 
 
      
 b = 10
