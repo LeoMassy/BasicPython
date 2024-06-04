@@ -7,10 +7,9 @@ else:
             print(False)
             break
     else:
-        print(True)
-    
+        print(True) 
 
-     
+
 b = 10
 if b <= 1:
     print(False)
