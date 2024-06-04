@@ -6,7 +6,6 @@ words = text.split()
 num = ""
 for i in range(len(words)):
     num += str(len(words[i]))
-
 print(num)
 
 
