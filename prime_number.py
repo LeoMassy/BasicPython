@@ -11,7 +11,6 @@ def is_prime(n):
     # 2または3で割り切れる数は素数ではない
     if n % 2 == 0 or n % 3 == 0:
         return False
-    
     # 5から√nまでの奇数を試す
     i = 5
     while i * i <= n:
