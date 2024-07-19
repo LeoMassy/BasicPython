@@ -1,5 +1,4 @@
 def is_prime(n):
-    
     # 1以下の数は素数ではない
     if n <= 1:
         return False
