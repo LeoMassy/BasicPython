@@ -1,4 +1,18 @@
-a = input("a の値を入力: ")
-b = input("b の値を入力: ")
+def gcd(a, b):
+   
+    while b != 0:
+        a, b = b, a % b
+    return a
 
-# TODO
+
+#1かどうかの判別
+def gcd(a, b):
+    while b != 0:
+        a, b = b, a % b
+    return a
+
+def are_coprime(a, b):
+    
+    return gcd(a, b) == 1
+
+
