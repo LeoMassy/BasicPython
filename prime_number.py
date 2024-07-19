@@ -1,39 +1,20 @@
-def prime_number(a):
-    if not isinstance(a, (int, float)):
-        print("数値を入力してください")
+def is_prime(n):
+    # 1以下の数は素数ではない
+    if n <= 1:
         return False
-
-    if a <= 0:
-        print("正の値で入力してください")
+    # 2と3は素数である
+    if n <= 3:
+        return True
+    # 2または3で割り切れる数は素数ではない
+    if n % 2 == 0 or n % 3 == 0:
         return False
-
-   
-    n = int(a)
-    if a - n != 0:
-        print("整数の値を入力してください")
-        return False
-
-    if n < 2:
-        print("自然数（2 以上）を入力してください")
-        return False
-
-    for i in range(1, n + 1):
-        if n % i == 0:
+    # 5から√nまでの奇数を試す
+    i = 5
+    while i * i <= n:
+        if n % i == 0 or n % (i + 2) == 0:
             return False
-
+        i += 6
     return True
 
-    if count == 2:
-        print("素数です")
-        return True
-    else:
-        print("素数じゃないです")
-        return False
 
-try:
-    n = float(input("自然数を入力してください: "))
-    prime_number(n)
-except ValueError:
-    print("数値を入力してください")
-    
     

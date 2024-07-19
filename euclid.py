@@ -1,17 +1,23 @@
-def euclid(a,b):
-    if a < b:
-        a, b = b, a
+def gcd(a, b):
     while b != 0:
         a, b = b, a % b
     return a
-def mutually_prime(a,b):
-    gcd = euclid(a,b)
-    if gcd ==1:
-        return True
-    else:
-        return False
+
+#1であるかどうか
+def gcd(a, b):
+    while b != 0:
+        a, b = b, a % b
+    return a
+
+def are_coprime(a, b):
+    """
+    | 項目 | 内容 |
+    | ---- | ---- |
+    | 引数 | 自然数 a, 自然数 b |
+    | 処理 | a と b が互いに素か判定する |
+    | 返り値 | 判定結果（bool 型） |
+    """
+    return gcd(a, b) == 1
 
 
-print("最大公約数:", euclid(a, b))
 
-print("互いに素であるか:", mutually_prime(a, b))
