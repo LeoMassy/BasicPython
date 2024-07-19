@@ -9,7 +9,7 @@ def trapezoidal_integral(f, a=0, b=1, n=100):
         integral += f(a + i * h)
     return integral * h
 
-# テスト用の関数と積分値の計算
+
 # (1) sin⁡x を区間 [0,π/2] で台形積分 (n=50)
 def func1(x):
     return math.sin(x)
